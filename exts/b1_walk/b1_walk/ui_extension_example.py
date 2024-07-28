@@ -4,7 +4,7 @@ import omni.ui as ui
 
 # Functions and vars are available to other extension as usual in python: `example.python_ext.some_public_function(x)`
 def some_public_function(x: int):
-    print("[b1-walk] some_public_function was called with x: ", x)
+    print("[b1_walk] some_public_function was called with x: ", x)
     return x**x
 
 
@@ -15,7 +15,7 @@ class ExampleExtension(omni.ext.IExt):
     # ext_id is current extension id. It can be used with extension manager to query additional information, like where
     # this extension is located on filesystem.
     def on_startup(self, ext_id):
-        print("[b1-walk] startup")
+        print("[b1_walk] startup")
 
         self._count = 0
 
@@ -39,4 +39,4 @@ class ExampleExtension(omni.ext.IExt):
                     ui.Button("Reset", clicked_fn=on_reset)
 
     def on_shutdown(self):
-        print("[b1-walk] shutdown")
+        print("[b1_walk] shutdown")

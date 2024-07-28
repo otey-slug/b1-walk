@@ -1,4 +1,4 @@
-from b1-walk.tasks.locomotion.velocity.velocity_env_cfg import LocomotionVelocityRoughEnvCfg
+from b1_walk.tasks.locomotion.velocity.velocity_env_cfg import LocomotionVelocityRoughEnvCfg
 
 from omni.isaac.lab.utils import configclass
 

@@ -21,7 +21,7 @@ keywords = ["extension", "template", "isaaclab"]
 # NOTE: Add additional dependencies here
 
 [[python.module]]
-name = "b1-walk"
+name = "b1_walk"
 
 [isaaclab_settings]
 # TODO: Uncomment and list any apt dependencies here.
