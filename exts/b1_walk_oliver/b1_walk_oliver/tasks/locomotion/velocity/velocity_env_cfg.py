@@ -3,7 +3,7 @@ from __future__ import annotations
 import math
 from dataclasses import MISSING
 
-import b1_walk.tasks.locomotion.velocity.mdp as mdp
+import b1_walk_oliver.tasks.locomotion.velocity.mdp as mdp
 
 import isaaclab.sim as sim_utils
 from isaaclab.assets import ArticulationCfg, AssetBaseCfg

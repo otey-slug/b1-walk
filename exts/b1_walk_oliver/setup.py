@@ -1,4 +1,4 @@
-"""Installation script for the 'b1_walk' python package."""
+"""Installation script for the 'b1_walk_oliver' python package."""
 
 import os
 import toml
@@ -18,8 +18,8 @@ INSTALL_REQUIRES = [
 
 # Installation operation
 setup(
-    name="b1_walk",
-    packages=["b1_walk"],
+    name="b1_walk_oliver",
+    packages=["b1_walk_oliver"],
     author=EXTENSION_TOML_DATA["package"]["author"],
     maintainer=EXTENSION_TOML_DATA["package"]["maintainer"],
     url=EXTENSION_TOML_DATA["package"]["repository"],
