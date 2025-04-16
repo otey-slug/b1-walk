@@ -1,11 +1,16 @@
-from b1_walk.tasks.locomotion.velocity.velocity_env_cfg import LocomotionVelocityRoughEnvCfg
+# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+# All rights reserved.
+#
+# SPDX-License-Identifier: BSD-3-Clause
 
-from omni.isaac.lab.utils import configclass
+from isaaclab.utils import configclass
+
+from isaaclab_tasks.manager_based.locomotion.velocity.velocity_env_cfg import LocomotionVelocityRoughEnvCfg
 
 ##
 # Pre-defined configs
 ##
-from omni.isaac.lab_assets.anymal import ANYMAL_D_CFG  # isort: skip
+from isaaclab_assets.robots.anymal import ANYMAL_D_CFG  # isort: skip
 
 
 @configclass
@@ -36,6 +41,6 @@ class AnymalDRoughEnvCfg_PLAY(AnymalDRoughEnvCfg):
 
         # disable randomization for play
         self.observations.policy.enable_corruption = False
-        # remove random pushing
-        self.randomization.base_external_force_torque = None
-        self.randomization.push_robot = None
+        # remove random pushing event
+        self.events.base_external_force_torque = None
+        self.events.push_robot = None
